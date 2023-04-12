@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="记录脚印">
@@ -176,9 +176,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-04-11 10:58:36 / 修改时间：13:45:20" itemprop="dateCreated datePublished" datetime="2023-04-11T10:58:36+00:00">2023-04-11</time>
+      <time title="创建时间：2023-04-11 10:58:36" itemprop="dateCreated datePublished" datetime="2023-04-11T10:58:36+00:00">2023-04-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-04-12 05:29:34" itemprop="dateModified" datetime="2023-04-12T05:29:34+00:00">2023-04-12</time>
     </span>
 
   
@@ -204,72 +210,14 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h2 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Bash 安装zsh</span></span><br><span class="line">$ sudo apt install zsh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置ohmyzsh</span></span><br><span class="line">$ sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL &lt;https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh&gt;)</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置ohmyzsh插件</span></span><br><span class="line"><span class="comment"># zsh-autosuggestions</span></span><br><span class="line">$ git <span class="built_in">clone</span> git://github.com/zsh-users/zsh-autosuggestions <span class="variable">$ZSH_CUSTOM</span>/plugins/zsh-autosuggestions</span><br><span class="line"></span><br><span class="line"><span class="comment"># zsh-syntax-highlighting</span></span><br><span class="line">$ git <span class="built_in">clone</span> &lt;https://github.com/zsh-users/zsh-syntax-highlighting.git&gt; <span class="variable">$&#123;ZSH_CUSTOM:-~/.oh-my-zsh/custom&#125;</span>/plugins/zsh-syntax-highlighting</span><br><span class="line"></span><br><span class="line">// 启用插件</span><br><span class="line">$ vim .zshrc</span><br><span class="line">plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>其他更多语言</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep java | awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> | xargs <span class="built_in">kill</span> -9</span><br></pre></td></tr></table></figure>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test11</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">  <span class="type">long</span> <span class="variable">start</span> <span class="operator">=</span> System.currentTimeMillis();</span><br><span class="line">  <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000000</span>;i++)&#123;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">          a++;</span><br><span class="line">      &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">          e.printStackTrace();</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="type">long</span> <span class="variable">useTime</span> <span class="operator">=</span> System.currentTimeMillis()-start;</span><br><span class="line">  System.out.println(<span class="string">&quot;useTime:&quot;</span>+useTime);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Python 字典类型转换为 JSON 对象</span></span><br><span class="line">data = &#123;</span><br><span class="line">    <span class="string">&#x27;no&#x27;</span> : <span class="number">1</span>,</span><br><span class="line">    <span class="string">&#x27;name&#x27;</span> : <span class="string">&#x27;hello&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;url&#x27;</span> : <span class="string">&#x27;http://tangly1024.com&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">json_str = json.dumps(data)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;Python 原始数据：&quot;</span>, <span class="built_in">repr</span>(data))</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;JSON 对象：&quot;</span>, json_str)</span><br></pre></td></tr></table></figure>
-  <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># R 语言</span></span><br><span class="line"><span class="comment">#file.edit(path.expand(file.path(&quot;~&quot;, &quot;.Renviron&quot;)))</span></span><br><span class="line">library<span class="punctuation">(</span>telegram.bot<span class="punctuation">)</span></span><br><span class="line">library<span class="punctuation">(</span>stringr<span class="punctuation">)</span></span><br><span class="line"><span class="comment"># Initiate the bot session using the token from the enviroment variable.</span></span><br><span class="line">bot <span class="operator">=</span> Bot<span class="punctuation">(</span>token <span class="operator">=</span> bot_token<span class="punctuation">(</span><span class="string">&#x27;your_bot&#x27;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">usr_list <span class="operator">&lt;-</span> <span class="built_in">c</span><span class="punctuation">(</span><span class="number">12344566</span><span class="punctuation">,</span> <span class="number">12345566</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
-  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">	<span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"> </span><br><span class="line"><span class="comment">// main() 是程序开始执行的地方</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   cout &lt;&lt; <span class="string">&quot;Hello World&quot;</span>; <span class="comment">// 输出 Hello World</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">namespace</span> <span class="title">HelloWorldApplication</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">HelloWorld</span></span><br><span class="line">   &#123;</span><br><span class="line">      <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">      &#123;</span><br><span class="line">         Console.WriteLine(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">         Console.ReadKey();</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">.section __TEXT,__text,regular,pure_instructions</span><br><span class="line">.macosx_version_min 10, 13</span><br><span class="line">.globl _add_a_b</span><br><span class="line">.p2align 4, 0x90</span><br><span class="line">_add_a_b: ## @add_a_b</span><br><span class="line">.cfi_startproc</span><br><span class="line">## BB#0:</span><br><span class="line">pushq %rbp</span><br><span class="line">Lcfi0:</span><br><span class="line">.cfi_def_cfa_offset 16</span><br><span class="line">Lcfi1:</span><br><span class="line">.cfi_offset %rbp, -16</span><br><span class="line">movq %rsp, %rbp</span><br><span class="line">Lcfi2:</span><br><span class="line">.cfi_def_cfa_register %rbp</span><br><span class="line">movl %edi, -4(%rbp)</span><br><span class="line">movl %esi, -8(%rbp)</span><br><span class="line">movl -4(%rbp), %esi</span><br><span class="line">addl -8(%rbp), %esi</span><br><span class="line">movl %esi, %eax</span><br><span class="line">popq %rbp</span><br><span class="line">retq</span><br><span class="line">.cfi_endproc</span><br><span class="line"></span><br><span class="line">.globl _main</span><br><span class="line">.p2align 4, 0x90</span><br><span class="line">_main: ## @main</span><br><span class="line">.cfi_startproc</span><br><span class="line">## BB#0:</span><br><span class="line">pushq %rbp</span><br><span class="line">Lcfi3:</span><br><span class="line">.cfi_def_cfa_offset 16</span><br><span class="line">Lcfi4:</span><br><span class="line">.cfi_offset %rbp, -16</span><br><span class="line">movq %rsp, %rbp</span><br><span class="line">Lcfi5:</span><br><span class="line">.cfi_def_cfa_register %rbp</span><br><span class="line">subq $16, %rsp</span><br><span class="line">movl $1, %edi</span><br><span class="line">movl $2, %esi</span><br><span class="line">movl $0, -4(%rbp)</span><br><span class="line">callq _add_a_b</span><br><span class="line">addq $16, %rsp</span><br><span class="line">popq %rbp</span><br><span class="line">retq</span><br><span class="line">.cfi_endproc</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="2-公式"><a href="#2-公式" class="headerlink" title="2.公式"></a>2.公式</h2><ul>
-<li><p>数学公式</p>
-<p>  $$<br>  f\left(\left[\frac{1+{x, y}}{\left(\frac{x}{y}+\frac{y}{x}\right)(u+1)}+a\right]^{3 &#x2F; 2}\right)\tag{行标}<br>  $$</p>
-</li>
-<li><p>化学方程</p>
-<p>  $\ce{2H2O-&gt;2H2 + O2}$</p>
-</li>
-<li><p>其他更多公式</p>
-<p>  $$<br>  \begin{aligned}<br>  AACD \Rightarrow AAAD &amp;&#x3D; \frac 1 3\<br>  AACD \Rightarrow AACD &amp;&#x3D; \frac 1 3 + \frac 1 6 &#x3D; \frac 1 2  \<br>  AACD \Rightarrow AACC &amp;&#x3D; \frac 1 6 \end{aligned}<br>  $$</p>
-<p>  $$<br>  \begin{bmatrix}<br>      c_{0}&amp;c_{n-1}&amp;c_{n-2}&amp;\cdots &amp;c_{1}\<br>      c_{1}&amp;c_{0}&amp;c_{n-1} &amp;  \cdots &amp;c_{2}\<br>      c_{2}&amp;c_{1}&amp;c_{0}&amp;\cdots  &amp;c_3 \<br>      \vdots &amp;\vdots&amp; \vdots&amp;\ddots &amp;\vdots \<br>      c_{n-1}&amp;c_{n-2}&amp;c_{n-3}&amp;\dots &amp;c_{0}<br>  \end{bmatrix}<br>  $$</p>
-<p>  $$<br>  \begin{aligned} \sin 2\theta &amp; &#x3D; 2\sin \theta \cos \theta \ &amp; &#x3D; \cfrac{2 \tan \theta}{1+\tan^2 \theta} \end{aligned}<br>  $$</p>
-<p>  $$<br>  AACD\Rightarrow \left{\begin{matrix}<br>  第1次取值 &amp; 第2次取值 &amp; 概率 &amp; 最终状态\<br>  A &amp; C,D &amp;&#x3D; \frac 1 2 \times \frac 2 3&#x3D; \frac 1 3 &amp;\Rightarrow AAAD \<br>  A &amp; A &amp;&#x3D; \frac 1 2 \times \frac 1 3&#x3D; \frac 1 6 &amp;\Rightarrow AACD \<br>  C,D &amp; A &amp;&#x3D; 2 \times \frac 1 4 \times \frac 2 3&#x3D; \frac 1 3 &amp;\Rightarrow CCAD \<br>  C,D &amp; C,D &amp;&#x3D; 2 \times \frac 1 4 \times \frac 1 3&#x3D; \frac 1 6 &amp;\Rightarrow CCAA<br>  \end{matrix}\right. <br>  $$</p>
-</li>
-</ul>
-<h2 id="3-图表"><a href="#3-图表" class="headerlink" title="3. 图表"></a>3. 图表</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line">公司架构--&gt;商务</span><br><span class="line">公司架构--&gt;研发</span><br><span class="line">公司架构--&gt;设计</span><br><span class="line">公司架构--&gt;运营</span><br><span class="line">公司架构--&gt;产品</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-PDF嵌入"><a href="#4-PDF嵌入" class="headerlink" title="4. PDF嵌入"></a>4. PDF嵌入</h2><p><a target="_blank" rel="noopener" href="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fbdf623f-21ce-48a2-b8b6-152680ad6dfe/tailwindcss.pdf">tailwindcss.pdf</a></p>
-<h2 id="5-下载附件"><a href="#5-下载附件" class="headerlink" title="5.下载附件"></a>5.下载附件</h2><p><a target="_blank" rel="noopener" href="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fab11580-96c3-4230-90f6-05257f00fb0a/%E6%B5%8B%E8%AF%95%E5%B5%8C%E5%85%A5PDF.pdf">下载PDF附件.pdf</a></p>
-<h2 id="6-照片集"><a href="#6-照片集" class="headerlink" title="6. 照片集"></a>6. 照片集</h2><h2 id="7-内嵌网页"><a href="#7-内嵌网页" class="headerlink" title="7. 内嵌网页"></a>7. 内嵌网页</h2><p><a target="_blank" rel="noopener" href="https://docs.tangly1024.com/zh">https://docs.tangly1024.com/zh</a></p>
-<h2 id="5-代办"><a href="#5-代办" class="headerlink" title="5.代办"></a>5.代办</h2><p>家庭</p>
-<ul>
-<li><input disabled="" type="checkbox"> 洗衣</li>
-<li><input disabled="" type="checkbox"> 做饭</li>
-</ul>
-<p>事业</p>
-<ul>
-<li><input disabled="" type="checkbox"> 开会</li>
-<li><input disabled="" type="checkbox"> 加班</li>
-</ul>
-<h2 id="6-折叠列表"><a href="#6-折叠列表" class="headerlink" title="6.折叠列表"></a>6.折叠列表</h2><ul>
-<li>点击展开<ul>
-<li>点击展开<ul>
-<li><p>点击展开</p>
-<p>  内容可以多级嵌套</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="8-同步块"><a href="#8-同步块" class="headerlink" title="8. 同步块"></a>8. 同步块</h2><p>Notion支持将不同页面的块进行同步，即 SyncBlock，以下是来自另一个页面的块：</p>
-<p>【sync-block】这是一段来自示例文章-3的段落 ，通过 SyncBlock同步。</p>
-<aside>
-💡 注意 ： 同步块的使用条件是源页面也要被**开放共享** ，否则NotionNext将无权访问，页面上会被忽略渲染。
-
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e078a58d-d9a8-48ac-8489-34d9d71b03c8/Untitled.png" alt="Untitled"></p>
-</aside>
-
-<h1 id="多级目录"><a href="#多级目录" class="headerlink" title="多级目录"></a>多级目录</h1><p>heading标题在博客中自动转为目录</p>
-<h2 id="二级目录1"><a href="#二级目录1" class="headerlink" title="二级目录1"></a>二级目录1</h2><p>二级内容 1</p>
-<h2 id="二级目录2"><a href="#二级目录2" class="headerlink" title="二级目录2"></a>二级目录2</h2><p>二级内容2</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/04/11/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -303,8 +251,6 @@
   </span>
   <span class="author" itemprop="copyrightHolder">FixCode</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
 
     </div>
   </footer>
@@ -314,6 +260,7 @@
     <i class="fa fa-arrow-up fa-lg"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -326,6 +273,8 @@
 
   
 
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.4.3/mermaid.min.js","integrity":"sha256-e0o3JYsdjqKajf9eOe22FhioYSz9WofRY4dLKo3F6do="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
 
 
 
@@ -334,6 +283,8 @@
 
 
 
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"1778750163/1778750163.github.io","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
 
 </body>
 </html>
