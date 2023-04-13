@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://fixcod.cn/2023/04/11/hello-world/</loc>
+    <loc>https://www.fixcod.cn/categories/index.html</loc>
     
-    <lastmod>2023-04-12</lastmod>
+    <lastmod>2023-04-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://fixcod.cn/sitemap/index.html</loc>
+    <loc>https://www.fixcod.cn/tags/index.html</loc>
+    
+    <lastmod>2023-04-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fixcod.cn/2023/04/11/hello-world/</loc>
+    
+    <lastmod>2023-04-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fixcod.cn/sitemap/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -20,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://fixcod.cn/schedule/index.html</loc>
+    <loc>https://www.fixcod.cn/schedule/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -29,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://fixcod.cn/archives/index.html</loc>
+    <loc>https://www.fixcod.cn/archives/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -38,25 +56,7 @@
   </url>
   
   <url>
-    <loc>http://fixcod.cn/categories/index.html</loc>
-    
-    <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://fixcod.cn/about/index.html</loc>
-    
-    <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://fixcod.cn/tags/index.html</loc>
+    <loc>https://www.fixcod.cn/about/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -66,13 +66,41 @@
   
 
   <url>
-    <loc>http://fixcod.cn/</loc>
-    <lastmod>2023-04-12</lastmod>
+    <loc>https://www.fixcod.cn/</loc>
+    <lastmod>2023-04-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
+  <url>
+    <loc>https://www.fixcod.cn/tags/C/</loc>
+    <lastmod>2023-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fixcod.cn/tags/Slate/</loc>
+    <lastmod>2023-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fixcod.cn/tags/Lua/</loc>
+    <lastmod>2023-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://www.fixcod.cn/categories/UE4/</loc>
+    <lastmod>2023-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
